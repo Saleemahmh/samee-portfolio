@@ -18,6 +18,73 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  /* animations */
+.animate-sun {
+  animation: drift 6s ease-in-out infinite;
+}
+
+.animate-sun:hover {
+  animation-play-state: paused; /* stop movement on hover */
+}
+
+@keyframes drift {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(6px, -4px);  /* drift right & slightly up */
+  }
+  50% {
+    transform: translate(0, -8px);    /* go higher */
+  }
+  75% {
+    transform: translate(-6px, -4px); /* drift left & slightly up */
+  }
+}
+
+@keyframes move-skyline {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1000px 0;
+  }
+}
+@keyframes move-skyline2 {
+  from {
+    background-position: -1000px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes move-clouds {
+ 0%,100%{
+  transform:translateY(0);
+  opacity:0.7;
+ }
+ 50%{
+  transform:translateY(-6px);
+  opacity:1;
+ }
+ 70%{
+  transform:translateX(-2px);
+  opacity:0.5;
+ }
+}
+
+.animate-skyline {
+  animation: move-skyline 60s linear infinite;
+}
+.animate-skyline2 {
+  animation: move-skyline2 60s linear infinite;
+}
+
+.animate-clouds {
+  animation: move-clouds 3s ease-in-out infinite;
+ 
+}
 
   @media (min-width: 640px) { /* sm */
     .container {
