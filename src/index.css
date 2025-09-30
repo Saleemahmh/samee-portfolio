@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Italianno&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Playball&display=swap");
 @import "tailwindcss";
 
 @theme{
     --font-aladin:"Aladin", serif;
-    --font-italianno:"Italianno", cursive;
+    --font-playball:"Playball", cursive;
     --color-blue:#0077B6;
     --color-aqua:#00B4D8;
     --color-lightblue:#90E0EF;
