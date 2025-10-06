@@ -23,33 +23,32 @@ const Expertise = () => {
               <h1 className="font-aladin text-blue text-3xl">{item.name}</h1>
               <p className="font-playball text-xl text-aqua">{item.desc}</p>
               <motion.button
-      aria-label="Neon action"
-      // continuous pulsing animation (boxShadow & subtle scale)
-      animate={{
-        boxShadow: [
-          `0 0 6px rgba(0, 119, 182, 0.12)`,
-          `0 0 22px rgba(0, 119, 182, 0.55)`,
-          `0 0 6px rgba(0, 119, 182, 0.12)`,
-        ],
-        scale: [1, 1.02, 1],
-      }}
-      transition={{
-        duration: 2.2,
-        repeat: Infinity,
-        repeatType: "reverse",
-        ease: "easeInOut",
-      }}
-      // stronger effect on hover
-      whileHover={{
-        boxShadow: `0 0 24px rgba(253, 253, 150, 0.95), 0 0 48px rgba(0, 119, 182, 0.6), 0 0 96px rgba(0, 119, 182, 0.28)`,
-        scale: 1.06,
-      }}
-      whileTap={{ scale: 0.985 }}
-     className="flex flex-cols mt-auto cursor-pointer bg-blue rounded-lg w-42 h-14 p-4 font-aladin text-lightblue text-xl"
-      style={{ willChange: "transform, box-shadow" }}
-    >
-                Learn More... <TbArrowBadgeRight className="mt-1"></TbArrowBadgeRight> <TbArrowBadgeRightFilled className="mt-1"></TbArrowBadgeRightFilled>
-  
+                animate={{
+                  boxShadow: [
+                    `0 0 6px rgba(0, 119, 182, 0.12)`,
+                    `0 0 22px rgba(0, 119, 182, 0.55)`,
+                    `0 0 6px rgba(0, 119, 182, 0.12)`,
+                  ],
+                  scale: [1, 1.02, 1],
+                }}
+                transition={{
+                  duration: 2.2,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                  ease: "easeInOut",
+                }}
+                // stronger effect on hover
+                whileHover={{
+                  boxShadow: `0 0 24px rgba(253, 253, 150, 0.95), 0 0 48px rgba(0, 119, 182, 0.6), 0 0 96px rgba(0, 119, 182, 0.28)`,
+                  scale: 1.06,
+                }}
+                whileTap={{ scale: 0.985 }}
+                className="flex flex-cols mt-auto cursor-pointer bg-blue rounded-lg w-42 h-14 p-4 font-aladin text-lightblue text-xl"
+                style={{ willChange: "transform, box-shadow" }}
+              >
+                Learn More...{" "}
+                <TbArrowBadgeRight className="mt-1"></TbArrowBadgeRight>{" "}
+                <TbArrowBadgeRightFilled className="mt-1"></TbArrowBadgeRightFilled>
               </motion.button>
             </motion.div>
           );
