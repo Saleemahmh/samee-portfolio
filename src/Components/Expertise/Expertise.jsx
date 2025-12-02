@@ -6,7 +6,7 @@ import { Expertisedata } from "../../data/Expertisedata.js";
 
 const Expertise = () => {
   return (
-    <div className="container h-fit">
+    <div id="services" className="container h-fit">
       <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-8 p-8">
         {Expertisedata.map((item) => {
           return (

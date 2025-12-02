@@ -1,48 +1,72 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Testimonialdata } from "../../data/Testimonialdata";
 import Lottie from "lottie-react";
 import ratingprofile from "../../assets/Review Lottie Animation.json";
-import { motion } from "framer-motion";
+import { motion, useAnimation, useMotionValue } from "framer-motion";
+
 const Testimonials = () => {
+  const duplicated = [...Testimonialdata, ...Testimonialdata];
+
+  const x = useMotionValue(0);
+  const controls = useAnimation();
+
+  const startAnimation = ()=>{
+    controls.start({
+      x:-50 +"%",
+      transition:{
+        duration:20,
+        repeat: Infinity,
+        ease:"linear",
+      },
+    });
+  };
+useEffect(()=>{
+  startAnimation();
+},[]);
+
+const handleMouseEnter = () =>{
+  controls.stop();
+};
+const handleMouseExit = ()=>{
+  startAnimation();
+};
+
   return (
-    <div className="container h-fit ">
+    <div id="testimonials" className="w-full overflow-hidden py-8">
       <div className="gradient">
-        <div className="flex">
-          {Testimonialdata.map((item, index) => {
-            return (
-              <>
-                <motion.div
-                  initial={{ x: 0 }}
-                  animate={{ x: "-100%" }}
-                  transition={{
-                    duration: 10,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-            
-                  className="flex flex-shrink-0 flex-col flex-1 min-w-[250px] items-center w-72 h-56 p-2 m-4 bg-beige/40 border-2 rounded-md border-aqua/50"
-                  key={index}
-                >
-                  <Lottie
-                    animationData={ratingprofile}
-                    loop={true}
-                    className="w-20 h-20"
-                  />
-                  <h2 className="font-aladin text-blue text-xl">{item.name}</h2>
-                  <p className="font-aladin text-aqua text-xl">
-                    {item.instgramid}
-                  </p>
-                  <p className="font-aladin text-blue ">
-                    {item.message}
-                  </p>
-                </motion.div>
-              </>
-            );
-          })}
-        </div>
+      <motion.div
+        className="flex"
+         animate={controls}
+       style={{x}}
+       onMouseEnter={handleMouseEnter}
+       onMouseLeave={handleMouseExit}
+      >
+        {duplicated.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center text-center
+              min-w-[250px] sm:min-w-[300px] md:min-w-[350px]
+              bg-beige/40 border-2 border-aqua/50 rounded-md
+              mx-3 p-4 h-auto"
+          >
+            <Lottie animationData={ratingprofile} loop className="w-20 h-20" />
+
+            <h2 className="font-aladin text-blue text-xl">{item.name}</h2>
+
+            <p className="font-aladin text-aqua text-lg">
+              {item.instgramid}
+            </p>
+
+            <p className="font-aladin text-blue mt-2">
+              {item.message}
+            </p>
+          </div>
+        ))}
+      </motion.div>
       </div>
     </div>
   );
 };
 
 export default Testimonials;
+

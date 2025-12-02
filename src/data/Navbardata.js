@@ -7,21 +7,21 @@ export const Navbardata = [
   {
     id: 2,
     name: "Services",
-    links: "#",
+    links: "#services",
   },
   {
     id: 3,
     name: "Testimonials",
-    links: "#",
+    links: "#testimonials",
   },
   {
     id: 4,
     name: "Projects",
-    links: "#",
+    links: "#projects",
   },
   {
     id: 5,
     name: "My Stories",
-    links: "#",
+    links: "#mystories",
   },
 ];

@@ -11,6 +11,9 @@
     --color-beige:#FDFD96;
 
 }
+html{
+  scroll-behavior: smooth;
+}
 .gradient{
   mask-image:linear-gradient(
     to right,

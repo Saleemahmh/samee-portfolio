@@ -1,59 +1,55 @@
 export const Testimonialdata = [
   {
     id: 1,
-    name: "Nia Page",
-    instgramid: "@authorniapage",
-    message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
+    name: "Honey",
+    instgramid: "@episode.honey",
+    message: "Ah THAT IS PERFECT!!!",
   },
   {
     id: 2,
     name: "Eyahmn",
-    instgramid: "@eyahmn",
+    instgramid: "@eyahmn.episode",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
+      "no I absolutely love it! You did amazing given the fact I provided no references 💀",
   },
   {
     id: 3,
     name: "Cindirella",
     instgramid: "@cindyrella",
-    message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
+    message: "Ofc! Your BGs are lovely 🩵",
   },
   {
     id: 4,
-    name: "Honey",
-    instgramid: "@episode.honey",
+    name: "Nia Page",
+    instgramid: "@authorniapage",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
+      "You’re the best and I’ll be sure to let everyone know you were great!🥰 ",
   },
   {
     id: 5,
     name: "Clarissa",
-    instgramid: "@clarissa",
-    message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
+    instgramid: "@clariissawrites",
+    message: "Hi! Yes that’s perfect!! 😍 I lovee it",
   },
   {
     id: 6,
     name: "Lisa Looms",
-    instgramid: "@lisolooms",
-    message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
+    instgramid: "@lisalooms",
+    message: "It was perfect lovely thank you 💕💕💕",
   },
 
   {
     id: 7,
     name: "Anila",
-    instgramid: "@anila",
+    instgramid: "@anila.episode",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
+      "Thank you for your hard work ❤️I’ll come back to you later if I’ll need some more backgrounds 🥰",
   },
   {
     id: 8,
-    name: "Mariem",
-    instgramid: "@mariem",
+    name: "Em",
+    instgramid: "@epiwritesbyem",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
+      "I’ve received it! Thank you so much, I absolutely love the backgrounds 🥰",
   },
 ];
