@@ -6,8 +6,10 @@ import Lottie from "lottie-react";
 import { IoMenuOutline } from "react-icons/io5";
 import logoanimation from "../../assets/Butterfly Lottie Animation.json";
 import HamburgerMenu from "./HamburgerMenu";
+import ContactModal from "../ContactMe/ContactModal";
 const Navbar = () => {
-  const [open,setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [openContactModal, setOpenContactModal] = useState(false);
   return (
     <>
       <nav>
@@ -16,7 +18,11 @@ const Navbar = () => {
 
           <div className="flex items-center">
             <img src={logo} className="relative w-30 h-20"></img>
-             <Lottie animationData={logoanimation} loop={true} className="w-15 h-15" />
+            <Lottie
+              animationData={logoanimation}
+              loop={true}
+              className="w-15 h-15"
+            />
           </div>
           {/*  Menu section */}
           <div className="hidden md:block">
@@ -37,18 +43,20 @@ const Navbar = () => {
           </div>
           {/* Contact me section */}
           <div>
-            <button className="hidden md:flex gap-2 items-center text-xl text-blue bg-pastelblue font-aladin hover:bg-beige rounded-sm px-6 py-2 duration-200 border-aqua border-3 hover:border-lightblue">
+            <button onClick={()=> setOpenContactModal(true)} className="hidden md:flex gap-2 items-center text-xl text-blue bg-pastelblue font-aladin hover:bg-beige rounded-sm px-6 py-2 duration-200 border-aqua border-3 hover:border-lightblue">
               <ImBubbles></ImBubbles> Contact Me
             </button>
           </div>
-              
+              <ContactModal isOpen={openContactModal} onClose={()=>setOpenContactModal(false)}></ContactModal>
           {/* Mobile humburger section */}
-          <div className="md:hidden" onClick={() => setOpen(!open)}> <IoMenuOutline className="text-4xl text-pastelblue" /></div>
-            
+          <div className="md:hidden" onClick={() => setOpen(!open)}>
+            {" "}
+            <IoMenuOutline className="text-4xl text-pastelblue" />
+          </div>
         </div>
       </nav>
       {/* Mobile sidebar */}
-       <HamburgerMenu open={open}></HamburgerMenu>
+      <HamburgerMenu open={open}></HamburgerMenu>
     </>
   );
 };
