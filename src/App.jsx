@@ -6,6 +6,7 @@ import Testimonials from './Components/Testimonials/Testimonials'
 import Projects from './Components/Projects/Projects'
 import ContactMe from './Components/ContactMe/ContactMe'
 import Footer from './Components/Footer/Footer'
+import {Toaster} from "react-hot-toast"
 import ParticleComponent from './Components/particles'
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Expertise></Expertise>
         <Testimonials></Testimonials>
         <Projects></Projects>
+        <Toaster position="top-right"></Toaster>
         <ContactMe></ContactMe>
         <Footer></Footer>
     </div>
