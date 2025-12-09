@@ -101,7 +101,9 @@ export default function ContactForm() {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.5, ease: [0, 0.71, 0.2, 1.01] }}
+      viewport={{ once: true, amount: 0.2 }}
       className="container font-aladin w-full md:max-w-3xl max-w-sm p-6 mt-8 mb-8 rounded-2xl bg-blue/30 backdrop-blur-md border border-beige shadow-xl"
       aria-live="polite"
     >
@@ -214,9 +216,7 @@ export default function ContactForm() {
               type="submit"
               disabled={status === "sending"}
             >
-       
-                {status === "sending" ? "Sending..." : "Send Message"}
-        
+              {status === "sending" ? "Sending..." : "Send Message"}
             </motion.button>
 
             <button
@@ -235,7 +235,9 @@ export default function ContactForm() {
           </div>
         </form>
         <div className="hidden md:flex flex-col justify-center items-center mt-4">
-          <h2 className="font-aladin text-blue sm:text-2xl md:text-3xl lg:text-4xl drop-shadow-lg">Contact Me!!</h2>
+          <h2 className="font-aladin text-blue sm:text-2xl md:text-3xl lg:text-4xl drop-shadow-lg">
+            Contact Me!!
+          </h2>
           <Lottie
             animationData={onboardinganimation}
             loop={true}

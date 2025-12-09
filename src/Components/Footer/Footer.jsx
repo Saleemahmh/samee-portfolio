@@ -7,7 +7,12 @@ import { Footerdata } from "../../data/Footerdata";
 const Footer = () => {
   return (
     <footer className="container rounded-md border-2 border-aqua bg-blue px-4 md:px-16 lg:px-28 py-4">
-      <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
+      <motion.div  initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8,
+                delay: 0.5,
+                type: "tween",
+  ease: "easeOut"}} className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
         <div className="flex items-center">
           <img src={logo} className="relative w-48 h-44"></img>
           <Lottie
@@ -43,7 +48,7 @@ const Footer = () => {
             })}
           </ul>
         </div>
-      </div>
+      </motion.div>
       <div className="border-pastelblue font-aladin text-pastelblue border-t pt-6 text-center mt-6">
         <p>@2025 Made by Saleemah. All Rights Reserved.</p>
       </div>

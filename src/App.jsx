@@ -8,6 +8,7 @@ import ContactMe from './Components/ContactMe/ContactMe'
 import Footer from './Components/Footer/Footer'
 import {Toaster} from "react-hot-toast"
 import ParticleComponent from './Components/particles'
+import MyStories from './Components/MyStories/MyStories'
 
 const App = () => {
   return (
@@ -18,7 +19,9 @@ const App = () => {
         <Hero></Hero>
         <Expertise></Expertise>
         <Testimonials></Testimonials>
+         <MyStories></MyStories>
         <Projects></Projects>
+       
         <Toaster position="top-right"></Toaster>
         <ContactMe></ContactMe>
         <Footer></Footer>

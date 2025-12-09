@@ -163,7 +163,11 @@ const imageVariants = isMobile? mobileVariants : desktopVariants;
   };
   return (
     <div id="projects" className="container gradient border-beige/20 rounded-md border-2 bg-lightblue">
-      <div className="relative flex items-center flex-col justify-center h-[300px] sm:h-[450px] md:h-[550px]">
+       <h2 className="font-aladin text-blue text-3xl md:text-4xl mt-5 lg:text-5xl text-center"> Projects</h2>
+      <motion.div initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.5, ease: [0, 0.71, 0.2, 1.01] }}
+        viewport={{ once: true, amount: 0.2 }} className="relative flex items-center flex-col justify-center h-[300px] sm:h-[450px] md:h-[550px]">
         {images.map((image, index) => (
           <motion.img
             key={index}
@@ -191,7 +195,7 @@ const imageVariants = isMobile? mobileVariants : desktopVariants;
         </button>
        </div>
        
-      </div>
+      </motion.div>
     </div>
   );
 };

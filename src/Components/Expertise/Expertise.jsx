@@ -7,7 +7,14 @@ import { Expertisedata } from "../../data/Expertisedata.js";
 const Expertise = () => {
   return (
     <div id="services" className="container h-fit">
-      <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-8 p-8">
+      <h2 className="font-aladin text-blue text-3xl md:text-4xl mt-5 lg:text-5xl text-center"> Services</h2>
+      <motion.div initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],}}
+      
+      viewport={{ once: true, amount: 0.2 }} className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-8 p-8">
         {Expertisedata.map((item) => {
           return (
             <motion.div
@@ -53,7 +60,7 @@ const Expertise = () => {
             </motion.div>
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 };
