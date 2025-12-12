@@ -16,12 +16,12 @@ export const Navbardata = [
   },
   {
     id: 4,
-    name: "Projects",
-    links: "#projects",
+    name: "My Stories",
+    links: "#mystories",
   },
   {
     id: 5,
-    name: "My Stories",
-    links: "#mystories",
+    name: "Projects",
+    links: "#projects",
   },
 ];

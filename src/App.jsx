@@ -1,34 +1,28 @@
-import React from 'react'
-import Navbar from './Components/Navbar/Navbar'
-import Hero from './Components/Hero/Hero'
-import Expertise from './Components/Expertise/Expertise'
-import Testimonials from './Components/Testimonials/Testimonials'
-import Projects from './Components/Projects/Projects'
-import ContactMe from './Components/ContactMe/ContactMe'
-import Footer from './Components/Footer/Footer'
-import {Toaster} from "react-hot-toast"
-import ParticleComponent from './Components/particles'
-import MyStories from './Components/MyStories/MyStories'
+import React from "react";
+import { Router, Routes, BrowserRouter, Route } from "react-router-dom";
+import ParticleComponent from "./Components/particles";
+import Home from "./pages/Home";
+import BackgroundPricing from "./pages/BackgroundPricing";
+import OverlayPricing from "./pages/OverlayPricing";
+import ScriptPricing from "./pages/ScriptPricing";
+import CodingPricing from "./pages/CodingPricing";
+import { AnimatePresence } from "framer-motion";
 
 const App = () => {
   return (
-    <>
-    <ParticleComponent></ParticleComponent>
-    <div className='overflow-x-hidden'>
-        <Navbar></Navbar>
-        <Hero></Hero>
-        <Expertise></Expertise>
-        <Testimonials></Testimonials>
-         <MyStories></MyStories>
-        <Projects></Projects>
-       
-        <Toaster position="top-right"></Toaster>
-        <ContactMe></ContactMe>
-        <Footer></Footer>
+    <div>
+      <ParticleComponent></ParticleComponent>
+      <AnimatePresence mode="wait">
+      <Routes>
+         <Route path="/" element={<Home/>}></Route>
+        <Route path="/backgroundpricing" element={<BackgroundPricing/>}></Route>
+        <Route path="/overlaypricing" element={<OverlayPricing/>}></Route>
+        <Route path="/scriptpricing" element={<ScriptPricing/>}></Route>
+        <Route path="/codingpricing" element={<CodingPricing/>}></Route>
+      </Routes>
+      </AnimatePresence>
     </div>
-    </>
-    
-  )
-}
+  );
+};
 
-export default App
+export default App;

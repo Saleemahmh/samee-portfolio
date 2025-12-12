@@ -3,6 +3,7 @@ import { TbArrowBadgeRight } from "react-icons/tb";
 import { TbArrowBadgeRightFilled } from "react-icons/tb";
 import { motion } from "framer-motion";
 import { Expertisedata } from "../../data/Expertisedata.js";
+import { Link } from "react-router-dom";
 
 const Expertise = () => {
   return (
@@ -28,7 +29,7 @@ const Expertise = () => {
               key={item.id}
             >
               <h1 className="font-aladin text-blue text-3xl">{item.name}</h1>
-              <p className="font-playball text-xl text-aqua">{item.desc}</p>
+              <p className="font-playball text-xl  text-blue">{item.desc}</p>
               <motion.button
                 animate={{
                   boxShadow: [
@@ -52,10 +53,11 @@ const Expertise = () => {
                 whileTap={{ scale: 0.985 }}
                 className="flex flex-cols mt-auto cursor-pointer bg-blue rounded-lg w-42 h-14 p-4 font-aladin text-lightblue text-xl"
                 style={{ willChange: "transform, box-shadow" }}
-              >
+              ><Link to={item.link}>
                 Learn More...{" "}
                 <TbArrowBadgeRight className="mt-1"></TbArrowBadgeRight>{" "}
                 <TbArrowBadgeRightFilled className="mt-1"></TbArrowBadgeRightFilled>
+                </Link>
               </motion.button>
             </motion.div>
           );
