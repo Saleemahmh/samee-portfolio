@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 import CloudLayout from "../Components/Expertise/CloudLayout";
-import { Backgroundpricedata } from "../data/Backgrounddata";
+import { Backgroundpricedata } from "../data/Pricingdata";
 import paypalicon from "../assets/icons8-paypal-100.png";
 import phonepeicon from "../assets/icons8-phone-pe-100.png";
 import kofiicon from "../assets/icons8-kofi-100.png";
@@ -89,7 +89,7 @@ const BackgroundPricing = () => {
             >
               <div className="font-playball text-3xl  text-blue">
                 <p className="p-2">
-                  1.These are base prices. If the background is highly detailed
+                  1. These are base prices. If the background is highly detailed
                   or complex, the final price may vary.
                 </p>
                 <p className="p-2">
@@ -129,12 +129,15 @@ const BackgroundPricing = () => {
                 <p className="p-2">
                   10. Full payment is required upfront before I begin the work.
                 </p>
+                 <p className="p-2">
+                  11. I take commissions for official Episode stories as well. Prices for these may vary, so feel free to DM me for more information.
+                </p>
                 <p className="p-2">
-                  11. Kindly share your deadline. Rush orders may incur
+                  12. Kindly share your deadline. Rush orders may incur
                   additional charges.
                 </p>
                 <p className="p-2">
-                  12. I kindly ask that you be respectful when placing an order
+                  13. I kindly ask that you be respectful when placing an order
                   and avoid rushing the process. I reserve the right to decline
                   commissions that are too complex or challenging.
                 </p>
