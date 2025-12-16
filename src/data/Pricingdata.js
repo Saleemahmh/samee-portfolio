@@ -70,21 +70,19 @@ export const Overlaydata = [
 export const Scriptpricedata = [
   {
     id: 1,
-    img: "/overlayimg.png",
     name: "Scene Directing",
-    desc: "Prices are subject to change depending on the complexity of the overlay.",
-    poundsprice: "1.75 GBP - 2.50 GBP",
-    dollarprice: "5.00 USD",
+    desc: "Script Templates, Minigames, Some scenes; those that do not have me code an entire chapter.",
+    poundsprice: "15 GBP - 20 GBP",
+    dollarprice: "20 USD - 26 USD ",
     rupeesprice: "Rs. 450",
   },
 
   {
     id: 2,
     name: "Menu Template",
-    img: "/overlayimg_2.png",
-    desc: "I’ll craft a visually styled overlay to bring your story title to life and provide 2 to 3 design variations.",
-    poundsprice: "6 GBP",
-    dollarprice: "8 USD",
+    desc: "I’ll craft and direct a visually appealing menu templates, complete with all necessary overlays.",
+    poundsprice: "10 GBP",
+    dollarprice: "14 USD",
     rupeesprice: "Rs. 1080",
   },
 ];

@@ -53,13 +53,19 @@ const ScriptPricing = () => {
                       {item.dollarprice}
                     </p>
                   </div>
+                   <div className="border-blue border-t pt-6 text-center mt-6">
+                    <p className="font-playball text-2xl md:text-3xl  text-blue">
+                      {item.desc}
+                    </p>
+                    
+                  </div>
                 </motion.div>
               );
             })}
           </motion.div>
           <h2 className="font-aladin text-blue text-3xl md:text-4xl mt-5 lg:text-5xl text-center">
             {" "}
-            Rules
+            Common Rules
           </h2>
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -82,55 +88,150 @@ const ScriptPricing = () => {
               className="flex flex-col flex-1 min-w-[250px] items-center w-72 h-fit backdrop-blur-md bg-[linear-gradient(135deg,rgba(144,224,239,0.4),rgba(0,180,216,0.4))] shadow-md border-beige/20 rounded-md border-2 p-8"
             >
               <div className="font-playball text-3xl  text-blue">
-                <p className="p-2">
-                  1.These are base prices. If the background is highly detailed
-                  or complex, the final price may vary.
-                </p>
-                <p className="p-2">
-                  2. Please contact me here or on Instagram—whichever is
+                 <p className="p-2">
+                  1. Please contact me here or on Instagram—whichever is
                   convenient—before placing a commission.
                 </p>
                 <p className="p-2">
-                  3. Provide all necessary details for your background,
-                  including references, descriptions, and any specific elements
-                  you want included.
+                  2. All information you provide will remain confidential, as long as mutual privacy is respected.
                 </p>
                 <p className="p-2">
-                  4. If you have a deadline, please inform me in advance. Once
-                  payment is completed, I will keep you updated throughout the
-                  process. Your approval is required at each stage for the work
-                  to continue.
+                  3. I reserve the right to decline any request that I am uncomfortable with or find problematic.
                 </p>
+
                 <p className="p-2">
-                  5. The estimated completion time for a background is between 1
-                  to 2 weeks from the time I begin your commission.
-                </p>
-                <p className="p-2">
-                  6. Crediting me at the end of your story is mandatory, as it
+                  4. Crediting me at the end of your story is mandatory, as it
                   helps me receive proper recognition for my work.
                 </p>
                 <p className="p-2">
-                  7. I accept payments only through PayPal for commissions.
+                  5. I accept payments only through PayPal for commissions.
                 </p>
                 <p className="p-2">
-                  8. Please note that PayPal charges a fee to the recipient.
+                  6. Please note that PayPal charges a fee to the recipient.
                   Make sure your payment covers all associated fees and taxes.
                 </p>
                 <p className="p-2">
-                  9. I will not accept payments that require me to pay any fees
+                  7. I will not accept payments that require me to pay any fees
                   from my side.
                 </p>
                 <p className="p-2">
-                  10. Full payment is required upfront before I begin the work.
+                  8. Full payment is required upfront before I begin the work.
                 </p>
                 <p className="p-2">
-                  11. Kindly share your deadline. Rush orders may incur
+                  9. Kindly share your deadline. Rush orders may incur
                   additional charges.
                 </p>
                 <p className="p-2">
-                  12. I kindly ask that you be respectful when placing an order
+                  10. I take coding commissions for official Episode stories as well. Prices for these may vary, so feel free to DM me for more information.
+                </p>
+                <p className="p-2">
+                  11. I kindly ask that you be respectful when placing an order
                   and avoid rushing the process. I reserve the right to decline
                   commissions that are too complex or challenging.
+                </p>
+                 <p className="p-2">
+                  12. Refunds are not possible once the work has started.
+                </p>
+                <p className="p-2">
+                  13. Kindly explain your ideas in detail so I can bring them to life accurately. Please note that once the work is started and finished, major revisions or starting over will not be offered.
+                </p>
+              </div>
+            </motion.div>
+          </motion.div>
+          <h2 className="font-aladin text-blue text-3xl md:text-4xl mt-5 lg:text-5xl text-center">
+            {" "}
+            Rules for Scene Directing 
+          </h2>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-8 p-8"
+          >
+            <motion.div
+              whileHover={{
+                boxShadow:
+                  "0 0 15px rgba(0, 180, 216,0.8), 0 0 30px rgba(0, 180, 216,0.6), 0 0 45px rgba(144,224,239,0.4)",
+                scale: 1.05,
+              }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              className="flex flex-col flex-1 min-w-[250px] items-center w-72 h-fit backdrop-blur-md bg-[linear-gradient(135deg,rgba(144,224,239,0.4),rgba(0,180,216,0.4))] shadow-md border-beige/20 rounded-md border-2 p-8"
+            >
+              <div className="font-playball text-3xl  text-blue">
+                 <p className="p-2">
+                  1. I offer minigame coding and scene directing services. Scene directing refers to simple or complex individual scenes and does not include directing a full chapter.
+                </p>
+                <p className="p-2">
+                  2. I currently work exclusively with the Limelight and Cinematic versions of Episode.
+                </p>
+                <p className="p-2">
+                  3. The final price will depend on the scene’s complexity. The mentioned prices indicate a minimum-to-maximum range.
+                </p>
+                <p className="p-2">
+                  4. Please provide all necessary details for the scene to be directed, including information about the scene, overlays, and backgrounds.
+                </p>
+                <p className="p-2">
+                  5. If you do not have an overlay or background, I can create them for you. Additional charges may apply based on overlay and background pricing.
+                </p>
+                <p className="p-2">
+                  6. I handle character placement and movement, overlays, zooms, transitions, sounds, animations, and filters if required—everything to make your scene flow smoothly and look visually engaging.
+                </p>
+                <p className="p-2">
+                  7. These templates are for your personal use only and may not be shared, redistributed, or posted for others to use. This is strictly prohibited.
+                </p>
+                <p className="p-2">
+                  8. I will create the templates in my portal and later share them with you via Google Drive for use. Please note that outfits and characters must be created by you in your own portal for the code to function correctly, provided all required backgrounds and overlays are uploaded.
+                </p>
+                <p className="p-2">
+                  9. The maximum deadline per script template is one week, though it may be completed earlier. I’ll keep you informed either way.
+                </p>
+                <p className="p-2">
+                  10. If you would like me to use backgrounds that you have purchased, I can do so. Rest assured, they will not be used for any personal or other projects.
+                </p>
+              </div>
+            </motion.div>
+          </motion.div>
+          <h2 className="font-aladin text-blue text-3xl md:text-4xl mt-5 lg:text-5xl text-center">
+            {" "}
+            Rules for Menu Template
+          </h2>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-8 p-8"
+          >
+            <motion.div
+              whileHover={{
+                boxShadow:
+                  "0 0 15px rgba(0, 180, 216,0.8), 0 0 30px rgba(0, 180, 216,0.6), 0 0 45px rgba(144,224,239,0.4)",
+                scale: 1.05,
+              }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              className="flex flex-col flex-1 min-w-[250px] items-center w-72 h-fit backdrop-blur-md bg-[linear-gradient(135deg,rgba(144,224,239,0.4),rgba(0,180,216,0.4))] shadow-md border-beige/20 rounded-md border-2 p-8"
+            >
+              <div className="font-playball text-3xl  text-blue">
+                 <p className="p-2">
+                  1. The menu template includes a fancy, eye-catching intro scene for your story, complete with all necessary overlays and backgrounds created by me. 
+                </p>
+                <p className="p-2">
+                  2. If you’d like a matching outro scene, that can also be made. Simple outro scenes will not incur additional charges, while more complex ones may require an extra fee.
+                </p>
+                 <p className="p-2">
+                  3.If you would like me to use backgrounds that you have purchased, I can do so. Rest assured, they will not be used for any personal or other projects.
+                </p>
+                 <p className="p-2">
+                  4. The maximum deadline per script template is 3 to 4 days, though it may be completed earlier. I’ll keep you informed either way.
                 </p>
               </div>
             </motion.div>
