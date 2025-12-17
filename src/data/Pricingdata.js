@@ -86,3 +86,13 @@ export const Scriptpricedata = [
     rupeesprice: "Rs. 1080",
   },
 ];
+export const Codingpricedata = [
+  {
+    id: 1,
+    name: "Chapter Directing",
+    desc: "Entire chapter",
+    poundsprice: "19 GBP - 42 GBP",
+    dollarprice: "25 USD - 55 USD ",
+    rupeesprice: "Rs. 450",
+  },
+];

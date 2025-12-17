@@ -15,7 +15,7 @@ const ScriptPricing = () => {
       <div className="p-6">
           <h2 className="font-aladin text-blue text-3xl md:text-4xl mt-5 lg:text-5xl text-center">
             {" "}
-            Background Pricing
+            Script Template Pricing
           </h2>
           <motion.div
             initial={{ opacity: 0, y: 40 }}
