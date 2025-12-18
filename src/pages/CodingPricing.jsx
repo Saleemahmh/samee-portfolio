@@ -117,14 +117,14 @@ const CodingPricing = () => {
               </motion.div>
              
               <motion.div
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.8,
-                  delay: 0.5,
+                  duration: 0.5,
+                  delay: 0.3,
                   ease: [0, 0.71, 0.2, 1.01],
                 }}
-                viewport={{ once: true, amount: 0.2 }}
+                viewport={{ once: true, amount: 0.05 }}
                 className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-8 p-8"
               >
                 <motion.div
