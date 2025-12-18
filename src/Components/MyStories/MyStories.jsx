@@ -76,7 +76,7 @@ const MyStories = () => {
                     scale: 1.06,
                   }}
                   whileTap={{ scale: 0.985 }}
-                  className="flex flex-cols justify-between cursor-pointer bg-blue rounded-lg w-32 h-11 px-7 py-2 mt-2 mx-3 lg:mt-5 lg:mx-9 font-aladin text-lightblue text-xl"
+                  className="flex flex-cols justify-between cursor-pointer bg-blue rounded-lg w-32 h-11 px-7 py-2 mt-auto mx-3 lg:mt-5 lg:mx-9 font-aladin text-lightblue text-xl"
                   style={{ willChange: "transform, box-shadow" }}
                 >
                   <a href={book.link}>Read now</a>
