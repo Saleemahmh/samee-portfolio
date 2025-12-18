@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { MyStoriesdata } from "../../data/Mystoriesdata";
+import authorpfp from "../../assets/Authorpfp.png";
 const MyStories = () => {
   return (
     <div id="mystories" >
@@ -93,7 +94,7 @@ const MyStories = () => {
         >
           <div className="w-32 h-32 md:w-60 md:h-60 rounded-full overflow-hidden shadow-xl bg-aqua/60 border border-white/40">
             <img
-              src="/src/assets/Authorpfp.png"
+              src={authorpfp}
               alt="Author"
               className="w-full h-full object-cover"
             />
