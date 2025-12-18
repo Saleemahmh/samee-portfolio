@@ -45,18 +45,15 @@ const Expertise = () => {
                   repeatType: "reverse",
                   ease: "easeInOut",
                 }}
-                // stronger effect on hover
                 whileHover={{
                   boxShadow: `0 0 24px rgba(253, 253, 150, 0.95), 0 0 48px rgba(0, 119, 182, 0.6), 0 0 96px rgba(0, 119, 182, 0.28)`,
                   scale: 1.06,
                 }}
                 whileTap={{ scale: 0.985 }}
-                className="flex flex-cols mt-auto cursor-pointer bg-blue rounded-lg w-42 h-14 p-4 font-aladin text-lightblue text-xl"
+                className="flex flex-col flex-wrap mt-3 md:mt-auto lg:mt-auto cursor-pointer bg-blue rounded-lg w-44 h-14 p-4 font-aladin text-lightblue text-xl"
                 style={{ willChange: "transform, box-shadow" }}
               ><Link to={item.link}>
-                Learn More...{" "}
-                <TbArrowBadgeRight className="mt-1"></TbArrowBadgeRight>{" "}
-                <TbArrowBadgeRightFilled className="mt-1"></TbArrowBadgeRightFilled>
+                Learn More 
                 </Link>
               </motion.button>
             </motion.div>
