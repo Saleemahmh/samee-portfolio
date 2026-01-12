@@ -7,11 +7,14 @@ import OverlayPricing from "./pages/OverlayPricing";
 import ScriptPricing from "./pages/ScriptPricing";
 import CodingPricing from "./pages/CodingPricing";
 import { AnimatePresence } from "framer-motion";
-
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 const App = () => {
   return (
     <div>
+      
       <ParticleComponent></ParticleComponent>
+           
       <AnimatePresence mode="wait">
       <Routes>
          <Route path="/" element={<Home/>}></Route>
@@ -21,6 +24,8 @@ const App = () => {
         <Route path="/codingpricing" element={<CodingPricing/>}></Route>
       </Routes>
       </AnimatePresence>
+       <Analytics />
+         <SpeedInsights />
     </div>
   );
 };
