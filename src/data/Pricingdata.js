@@ -91,8 +91,8 @@ export const Codingpricedata = [
     id: 1,
     name: "Chapter Directing",
     desc: "Entire chapter",
-    poundsprice: "19 GBP - 42 GBP",
-    dollarprice: "25 USD - 55 USD ",
+    poundsprice: "Starting from 17 GBP",
+    dollarprice: "Starting from 22 USD",
     rupeesprice: "Rs. 450",
   },
 ];

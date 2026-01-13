@@ -40,8 +40,8 @@ const CodingPricing = () => {
                    
                   <div className="flex justify-center items-center gap-3 lg:gap-5 flex-wrap p-4">
                     
-                    <p className="font-aladin text-2xl md:text-3xl  text-blue">In Pounds: 19 GBP to 42 GBP</p>
-                    <p className="font-aladin text-2xl md:text-3xl  text-blue">In Dollars: 25 USD to 55 USD</p>
+                    <p className="font-aladin text-2xl md:text-3xl  text-blue">In Pounds: Starting from 17 GBP</p>
+                    <p className="font-aladin text-2xl md:text-3xl  text-blue">In Dollars: Starting from 22 USD</p>
                   </div>
                 </motion.div>
               </motion.div>
