@@ -9,12 +9,12 @@ const Testimonials = () => {
 
   const x = useMotionValue(0);
   const controls = useAnimation();
-
+  const isMobile = window.innerWidth < 768;
   const startAnimation = () => {
     controls.start({
-      x: -50 + "%",
+      x: isMobile? "-100%":"-50%",
       transition: {
-        duration: 20,
+        duration: isMobile? 5 : 10,
         repeat: Infinity,
         ease: "linear",
       },
@@ -32,13 +32,13 @@ const Testimonials = () => {
   };
 
   return (
-    <div id="testimonials" className="w-full overflow-hidden py-8">
+    <div id="testimonials" className="w-full overflow-hidden py-6 md:py-8">
       <motion.div
         className="gradient"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.5, ease: [0, 0.71, 0.2, 1.01] }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.3 }}
       >
         <h2 className="font-aladin text-blue text-3xl md:text-4xl m-5 lg:text-5xl text-center">
           {" "}

@@ -15,7 +15,7 @@ export const Testimonialdata = [
   {
     id: 3,
     name: "Cindirella",
-    instgramid: "@cindyrella",
+    instgramid: "@cindyrella.stories",
     message: "Ofc! Your BGs are lovely 🩵",
   },
   {
